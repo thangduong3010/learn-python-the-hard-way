@@ -22,26 +22,22 @@ def formation_vote():
 def goalkeeper_list():
     print "Choose your goalkeeper:"
     gk_list = ['Manuel Neuer', 'Thibaut Courtois', 'Gianluigi Buffon', 'Beto']
-    for gk_name in gk_list:
-        print gk_name
+    print gk_list
 
 def defender_list():
     print "Choose your defenders:"
     def_list = ['David Alaba', 'Medhi Benatia', 'Jerome Boateng', 'Daniel Carvajal', 'Ezequiel Garay', 'Diego Godin', 'Mats Hummel', 'Vincent Kompany', 'Philipp Lamn', 'Miranda', 'Sergio Ramos', 'Pablo Zabaleta']
-    for def_name in def_list:
-        print def_name
+    print def_list
     
 def midfielder_list():
     print "Choose your midfielders:"
     mid_list = ['Xabi Alonso', 'Arda Turan', 'Angel Di Maria', 'James Rodriguez', 'Koke', 'Toni Kroos', 'Luka Modric', 'Paul Pogba', 'Ivan Rakitic', 'Marco Reus', 'Arjen Robben', 'Yaya Toure']
-    for mid_name in mid_list:
-        print mid_name
+    print mid_list
     
 def forward_list():
     print "Choose your forwards:"
     for_list = ['Alexis Sanchez', 'Gareth Bale', 'Karim Benzema', 'Diego Costa', 'Zlatan Ibrahimovic', 'Robert Lewandowski', 'Lionel Messi', 'Thomas Muller', 'Neymar', 'Carlos Tevez', 'Cristiano Ronaldo', 'Jonatan Soriano']
-    for for_name in for_list:
-        print for_name
+    print for_list
     
 def formation_442():
     goalkeeper_list()
