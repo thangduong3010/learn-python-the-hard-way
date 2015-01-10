@@ -6,6 +6,9 @@ def formation_vote():
     for form in formation_list:
          print form
     choice = raw_input("> ")
+    
+    
+    
     if choice == '4-4-2':
         formation_442()
     elif choice == '4-3-3':
@@ -19,6 +22,7 @@ def formation_vote():
     else:
         dead("You have to choose a formation!")
 
+##################list of players
 def goalkeeper_list():
     print "Choose your goalkeeper:"
     gk_list = ['Manuel Neuer', 'Thibaut Courtois', 'Gianluigi Buffon', 'Beto']
@@ -42,7 +46,7 @@ def forward_list():
     for_list = ['Alexis Sanchez', 'Gareth Bale', 'Karim Benzema', 'Diego Costa', 'Zlatan Ibrahimovic', 'Robert Lewandowski', 'Lionel Messi', 'Thomas Muller', 'Neymar', 'Carlos Tevez', 'Cristiano Ronaldo', 'Jonatan Soriano']
     for for_name in for_list:
         print for_name
-    
+#######################    
 def formation_442():
     goalkeeper_list()
     gk_choice = raw_input("> ")
@@ -67,75 +71,161 @@ def formation_442():
     forward_list()
     for_choice2 = raw_input("> ")
     
-    print "\nYour 2014 Team of the Year:"
-    print "--------------------------", gk_choice, "--------------------------\n"
-    print def_choice1, "-----", def_choice2, "-----", def_choice3, "-----", def_choice4, "\n"
-    print mid_choice1, "---", mid_choice2, "---", mid_choice3, "---", mid_choice4, "\n"
-    print "----------", for_choice1, "-----", for_choice2, "----------"
+    print "Confirm your team? (y/n)"
+    submit = raw_input("> ").lower()
+    if submit == 'n':
+        formation_vote()
+    else:
+        print "\nYour 2014 Team of the Year:"
+        print "--------------------------", gk_choice, "--------------------------\n"
+        print def_choice1, "-----", def_choice2, "-----", def_choice3, "-----", def_choice4, "\n"
+        print "---", mid_choice1, "---", mid_choice2, "---", mid_choice3, "---", mid_choice4, "\n"
+        print "----------", for_choice1, "-----", for_choice2, "----------"
+    
+    
+        
 
 def formation_433():
     goalkeeper_list()
     gk_choice = raw_input("> ")
     defender_list()
-    def_choice = raw_input("> ")
+    def_choice1 = raw_input("> ")
+    defender_list()
+    def_choice2 = raw_input("> ")
+    defender_list()
+    def_choice3 = raw_input("> ")
+    defender_list()
+    def_choice4 = raw_input("> ")
     midfielder_list()
-    mid_choice = raw_input("> ")
+    mid_choice1 = raw_input("> ")
+    midfielder_list()
+    mid_choice2 = raw_input("> ")
+    midfielder_list()
+    mid_choice3 = raw_input("> ")
     forward_list()
-    for_choice = raw_input("> ")
+    for_choice1 = raw_input("> ")
+    forward_list()
+    for_choice2 = raw_input("> ")
+    forward_list()
+    for_choice3 = raw_input("> ")
     
-    print "Your 2014 Team of the Year:"
-    print "----------", gk_choice, "----------"
-    print def_choice
-    print mid_choice
-    print for_choice
+    print "Confirm your team? (y/n)"
+    submit = raw_input("> ").lower()
+    if submit == 'n':
+        formation_vote()
+    else:
+        print "\nYour 2014 Team of the Year:"
+        print "--------------------------", gk_choice, "--------------------------\n"
+        print def_choice1, "-----", def_choice2, "-----", def_choice3, "-----", def_choice4, "\n"
+        print "---", mid_choice1, "---", mid_choice2, "---", mid_choice3, "---""\n"
+        print "--", for_choice1, "--", for_choice2, "--", for_choice3, "--"
         
 def formation_343():
     goalkeeper_list()
     gk_choice = raw_input("> ")
     defender_list()
-    def_choice = raw_input("> ")
+    def_choice1 = raw_input("> ")
+    defender_list()
+    def_choice2 = raw_input("> ")
+    defender_list()
+    def_choice3 = raw_input("> ")
     midfielder_list()
-    mid_choice = raw_input("> ")
+    mid_choice1 = raw_input("> ")
+    midfielder_list()
+    mid_choice2 = raw_input("> ")
+    midfielder_list()
+    mid_choice3 = raw_input("> ")
+    midfielder_list()
+    mid_choice4 = raw_input("> ")
     forward_list()
-    for_choice = raw_input("> ")
+    for_choice1 = raw_input("> ")
+    forward_list()
+    for_choice2 = raw_input("> ")
+    forward_list()
+    for_choice3 = raw_input("> ")
     
-    print "Your 2014 Team of the Year:"
-    print "----------", gk_choice, "----------"
-    print def_choice
-    print mid_choice
-    print for_choice
+    print "Confirm your team? (y/n)"
+    submit = raw_input("> ").lower()
+    if submit == 'n':
+        formation_vote()
+    else:
+        print "\nYour 2014 Team of the Year:"
+        print "--------------------------", gk_choice, "--------------------------\n"
+        print "-----", def_choice1, "-----", def_choice2, "-----", def_choice3, "-----", "\n"
+        print mid_choice1, "---", mid_choice2, "---", mid_choice3, "---", mid_choice4, "\n"
+        print "--", for_choice1, "--", for_choice2, "--", for_choice3, "--"
     
 def formation_352():
     goalkeeper_list()
     gk_choice = raw_input("> ")
     defender_list()
-    def_choice = raw_input("> ")
+    def_choice1 = raw_input("> ")
+    defender_list()
+    def_choice2 = raw_input("> ")
+    defender_list()
+    def_choice3 = raw_input("> ")
     midfielder_list()
-    mid_choice = raw_input("> ")
+    mid_choice1 = raw_input("> ")
+    midfielder_list()
+    mid_choice2 = raw_input("> ")
+    midfielder_list()
+    mid_choice3 = raw_input("> ")
+    midfielder_list()
+    mid_choice4 = raw_input("> ")
+    midfielder_list()
+    mid_choice5 = raw_input("> ")
     forward_list()
-    for_choice = raw_input("> ")
+    for_choice1 = raw_input("> ")
+    forward_list()
+    for_choice2 = raw_input("> ")
     
-    print "Your 2014 Team of the Year:"
-    print "----------", gk_choice, "----------"
-    print def_choice
-    print mid_choice
-    print for_choice
+    print "Confirm your team? (y/n)"
+    submit = raw_input("> ").lower()
+    if submit == 'n':
+        formation_vote()
+    else:
+        print "\nYour 2014 Team of the Year:"
+        print "--------------------------", gk_choice, "--------------------------\n"
+        print "-----", def_choice1, "-----", def_choice2, "-----", def_choice3, "-----", "\n"
+        print mid_choice1, "---", mid_choice2, "---", mid_choice3, "---", mid_choice4, "\n"
+        print "--------------------------", mid_choice5, "--------------------------\n"
+        print "----------", for_choice1, "-----", for_choice2, "----------"
     
 def formation_532():
     goalkeeper_list()
     gk_choice = raw_input("> ")
     defender_list()
-    def_choice = raw_input("> ")
+    def_choice1 = raw_input("> ")
+    defender_list()
+    def_choice2 = raw_input("> ")
+    defender_list()
+    def_choice3 = raw_input("> ")
+    defender_list()
+    def_choice4 = raw_input("> ")
+    defender_list()
+    def_choice5 = raw_input("> ")
     midfielder_list()
-    mid_choice = raw_input("> ")
+    mid_choice1 = raw_input("> ")
+    midfielder_list()
+    mid_choice2 = raw_input("> ")
+    midfielder_list()
+    mid_choice3 = raw_input("> ")
     forward_list()
-    for_choice = raw_input("> ")
+    for_choice1 = raw_input("> ")
+    forward_list()
+    for_choice2 = raw_input("> ")
     
-    print "Your 2014 Team of the Year:"
-    print "----------", gk_choice, "----------"
-    print def_choice
-    print mid_choice
-    print for_choice
+    print "Confirm your team? (y/n)"
+    submit = raw_input("> ").lower()
+    if submit == 'n':
+        formation_vote()
+    else:
+        print "\nYour 2014 Team of the Year:"
+        print "--------------------------", gk_choice, "--------------------------\n"
+        print "--------------------------", def_choice5, "--------------------------\n"
+        print def_choice1, "-----", def_choice2, "-----", def_choice3, "-----", def_choice4, "\n"
+        print "---", mid_choice1, "---", mid_choice2, "---", mid_choice3, "---""\n"
+        print "----------", for_choice1, "-----", for_choice2, "----------"
     
     
 def dead(why):
